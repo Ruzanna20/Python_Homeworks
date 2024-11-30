@@ -24,7 +24,8 @@ def random_numbers():
 def filter_num():
     array=[]
     with open("Numbers.txt","r") as file:
-        for i in file:
+        lines=file.readlines()
+        for i in lines:
             arr=list(map(int,i.split()))
             filtered=list(filter(lambda x:x>40,arr)) 
             array.append(filtered)
