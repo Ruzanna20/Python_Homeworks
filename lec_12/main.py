@@ -48,8 +48,9 @@ def read_as_generator(file_name):
 
 random_numbers()
 lines = read_file("Numbers.txt")
-print(lines) 
-
+for i in lines:
+    print(i) 
+    
 filtered_array=filter_num()
 
 for line in read_as_generator("Filtered.txt"):
