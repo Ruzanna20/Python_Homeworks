@@ -15,7 +15,7 @@ def execution_time_decorator(func):
 def random_numbers():
     with open("Numbers.txt","w") as file:
         for _ in range(100):
-            numbers=[str(random.randint(1,100)) for _ in range(21)]
+            numbers=[str(random.randint(1,100)) for _ in range(20)]
             line = " ".join(numbers)
             file.write(line+"\n")
 
